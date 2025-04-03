@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hopital Search</title>
+    <link rel="stylesheet" href="hospital-style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body> 
+    <nav class="nav-bar font-raleway">
+        <div class="logo-box">
+            <a href="home.html" class="logo">CureMe</a>
+        </div>
+        <div class="options">
+            <a href="hello.html" class="services">Services</a>
+            <a href="#" class="about">About us</a>
+            <a href="#" class="help">Help</a>
+            <button class="login">Login</button>
+        </div>
+    </nav>
+    <div class="min-h-screen bg-gray-50">
+        <header class="bg-white shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 py-6">
+                <div class="flex justify-between items-center">
+                    <div class="search-container">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input 
+                            type="text" 
+                            id="searchInput"
+                            class="search-input" 
+                            placeholder="Search hospitals by name or specialty..."
+                        >
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="max-w-7xl mx-auto px-4 py-8">
+          
+            <section id="hospitalsSection">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-6 font-raleway">Hospitals</h2>
+                <div class="grid" id="hospitalsGrid"></div>
+            </section>
+
+            <section id="hospitalDetails" class="hidden">
+                <button id="backButton" class="back-button mb-6">
+                    <i data-lucide="arrow-left" class="mr-2"></i>
+                    Back to Hospitals
+                </button>
+                <div id="hospitalInfo" class="mb-8"></div>
+                <div id="hospitalDoctors">
+                    <a href="doctor-search.html">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Medical Team ></h3>
+                    </a>
+                    <div class="grid" id="doctorsGrid"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="hospital-script.js"></script>
+</body>
+</html>

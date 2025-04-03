@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Body */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+body a {
+    text-decoration: none;
+}
+
+/* Nav bar */
+nav {
+    background-color: #c2e0ea;
+    color: black;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0.7em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    color: black;
+    font-size: 1.3em;
+    transition: color 100ms ease-in-out;
+}
+
+.logo:hover {
+    color: white;
+    font-weight: 600;
+}
+
+.options a {
+    padding: 5px 10px;
+    color: black;
+    margin-right: 50px;
+    transition: all 200ms ease-in;
+}
+
+.options a:hover,
+.options a:active {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 11px white;
+}
+
+.options button {
+    padding: 7px 23px;
+    font-size: 1.2rem;
+    color: black;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 0;
+}
+
+/* Container and Search */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#searchInput {
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 2px rgba(192, 240, 255, 0.76);
+}
+
+.searchButton {
+    background-color: rgb(0, 35, 78);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 300ms;
+    font-size: 16px;
+}
+
+.searchButton:hover {
+    background-color: rgb(0, 49, 109);
+}
+
+/* Doctor Grid and Cards */
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.doctor-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 300ms, box-shadow 300ms;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #c2e0ea;
+}
+
+.doctor-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #2d3748;
+}
+
+.doctor-card p {
+    color: #4a5568;
+    margin: 8px 0;
+}
+
+.doctor-card .rating {
+    color: #f6ad55;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.doctor-card .hospital-name {
+    font-size: 14px;
+    color: #718096;
+    font-style: italic;
+}
+
+.doctor-card .divider {
+    width: 50px;
+    height: 2px;
+    background-color: #c2e0ea;
+    margin: 15px auto;
+}
+
+.doctor-card button {
+    background-color: #01a1c9;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 300ms;
+    font-size: 16px;
+}
+
+.doctor-card button:hover {
+    background-color: #0082a3;
+}
+
+/* Profile Modal */
+.profile-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.profile-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.profile-content img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #c2e0ea;
+}
+
+.profile-content h3 {
+    font-size: 28px;
+    margin: 15px 0;
+    color: #2d3748;
+}
+
+.profile-content p {
+    color: #4a5568;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.profile-content .divider {
+    width: 60px;
+    height: 3px;
+    background-color: #c2e0ea;
+    margin: 20px auto;
+}
+
+.profile-content button {
+    background-color: #01a1c9;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 300ms;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.profile-content button:hover {
+    background-color: #0082a3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .search-bar input {
+        width: 100%;
+    }
+    
+    .doctor-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
