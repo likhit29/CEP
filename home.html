@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CureMe</title>
+    <title>CureFit</title>
     <link rel="stylesheet" href="home-style.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
@@ -92,13 +92,14 @@
                 <div class="social twitter"><i class="fa-brands fa-twitter"></i></div>
                 <div class="social youtube"><i class="fa-brands fa-youtube"></i></div>
             </div>
-            <div class="footer-logo">CureMe</div>
-            <div class="copyright">Copyright © 2025, CureMe. All rights reservered.</div>
+            <div class="footer-logo">CureFit</div>
+            <div class="copyright">Copyright © 2025, CureFit. All rights reservered.</div>
         </div>
     </div>
     <!--  -->
 
     <div class="container hide" id="container">
+      <div class="close" id="close"><i class="fa-solid fa-xmark"></i></div>
         <div class="form-container sign-up">
           <form>
             <h1>Create Account</h1>
@@ -170,6 +171,13 @@
     login.addEventListener('click', () => {
         page.classList.toggle('page-blur');
         contain.classList.toggle('hide');
+    })
+      
+    let close = document.getElementById('close');
+      
+    close.addEventListener('click', () => {
+        page.classList.toggle('page-blur');
+        contain.classList.toggle('hide') 
     })
 
 

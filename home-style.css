@@ -27,7 +27,6 @@ body {
   justify-content: start;
   position: relative;
   background-image: url("image.jpg");
-  backdrop-filter: blur(10px);
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: scroll; 

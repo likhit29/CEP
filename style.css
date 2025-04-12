@@ -7,10 +7,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.hide{
-    display: none;
-}
-
 body{
     background-color: #c9d6ff;
     background: linear-gradient(to right, #e2e2e2, #c9d6ff);
@@ -19,6 +15,29 @@ body{
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+}
+.hide{
+    display: none;
+}
+
+.close{
+    padding: 20px;
+    font-weight: 100;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    color: black;
+    z-index: 1200;
+    height: 1em;
+    width: 1em;
+    background-color: white;
+    font-size: 1.25em;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .container{
